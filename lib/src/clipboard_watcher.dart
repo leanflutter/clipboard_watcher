@@ -55,7 +55,7 @@ class ClipboardWatcher {
   }
 
   Future<void> stop() async {
-    await _channel.invokeMethod('start');
+    await _channel.invokeMethod('stop');
   }
 }
 
