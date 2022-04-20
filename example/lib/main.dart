@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dart:async';
 
 import 'package:flutter/services.dart';
 import 'package:clipboard_watcher/clipboard_watcher.dart';
@@ -16,8 +15,6 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> with ClipboardListener {
-  String _platformVersion = 'Unknown';
-
   @override
   void initState() {
     clipboardWatcher.addListener(this);
@@ -34,7 +31,6 @@ class _MyAppState extends State<MyApp> with ClipboardListener {
         body: Center(
             child: Column(
           children: [
-            Text('Running on: $_platformVersion\n'),
             ElevatedButton(
               child: const Text('start'),
               onPressed: () {
