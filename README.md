@@ -33,7 +33,7 @@ English | [简体中文](./README-ZH.md)
 
 | Linux | macOS | Windows |
 | :---: | :---: | :-----: |
-|   ➖   |   ✔️   |    ✔️    |
+|   ✔️   |   ✔️   |    ✔️    |
 
 ## Quick Start
 
@@ -43,7 +43,7 @@ Add this to your package's pubspec.yaml file:
 
 ```yaml
 dependencies:
-  clipboard_watcher: ^0.1.0
+  clipboard_watcher: ^0.1.1
 ```
 
 Or

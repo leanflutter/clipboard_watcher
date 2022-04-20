@@ -33,7 +33,7 @@
 
 | Linux | macOS | Windows |
 | :---: | :---: | :-----: |
-|   ➖   |   ✔️   |    ✔️    |
+|   ✔️   |   ✔️   |    ✔️    |
 
 ## 快速开始
 
@@ -43,7 +43,7 @@
 
 ```yaml
 dependencies:
-  clipboard_watcher: ^0.1.0
+  clipboard_watcher: ^0.1.1
 ```
 
 或
