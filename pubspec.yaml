@@ -1,6 +1,6 @@
 name: clipboard_watcher
 description: This plugin allows Flutter desktop apps to watch clipboard changes.
-version: 0.1.1
+version: 0.1.2
 homepage: https://github.com/leanflutter/clipboard_watcher
 
 platforms:

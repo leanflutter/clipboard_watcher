@@ -43,7 +43,7 @@ Add this to your package's pubspec.yaml file:
 
 ```yaml
 dependencies:
-  clipboard_watcher: ^0.1.1
+  clipboard_watcher: ^0.1.2
 ```
 
 Or
