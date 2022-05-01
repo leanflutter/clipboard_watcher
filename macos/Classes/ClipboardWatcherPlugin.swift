@@ -3,7 +3,7 @@ import FlutterMacOS
 
 public class ClipboardWatcherPlugin: NSObject, FlutterPlugin {
     private var channel: FlutterMethodChannel!
-
+    
     private let pasteboard = NSPasteboard.general
     private var changeCount: Int = -1
     
@@ -30,7 +30,13 @@ public class ClipboardWatcherPlugin: NSObject, FlutterPlugin {
     }
     
     public func start(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
-        timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(self.checkForChangesInPasteboard), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(
+            timeInterval: 0.1,
+            target: self,
+            selector: #selector(self.checkForChangesInPasteboard),
+            userInfo: nil,
+            repeats: true
+        )
         result(true)
     }
     
