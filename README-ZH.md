@@ -1,12 +1,14 @@
 # clipboard_watcher
 
-[![pub version][pub-image]][pub-url] [![][discord-image]][discord-url]
+[![pub version][pub-image]][pub-url] [![][discord-image]][discord-url] ![][visits-count-image] 
 
 [pub-image]: https://img.shields.io/pub/v/clipboard_watcher.svg
 [pub-url]: https://pub.dev/packages/clipboard_watcher
 
 [discord-image]: https://img.shields.io/discord/884679008049037342.svg
 [discord-url]: https://discord.gg/zPa6EZ2jqb
+
+[visits-count-image]: https://img.shields.io/badge/dynamic/json?label=Visits%20Count&query=value&url=https://api.countapi.xyz/hit/leanflutter.clipboard_watcher/visits
 
 这个插件允许 Flutter 桌面应用程序观察剪贴板的变化。
 
