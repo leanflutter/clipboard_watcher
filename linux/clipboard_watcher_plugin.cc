@@ -2,15 +2,10 @@
 
 #include <flutter_linux/flutter_linux.h>
 #include <gtk/gtk.h>
-#include <sys/utsname.h>
-
-#include <cstring>
 
 #define CLIPBOARD_WATCHER_PLUGIN(obj)                                     \
   (G_TYPE_CHECK_INSTANCE_CAST((obj), clipboard_watcher_plugin_get_type(), \
                               ClipboardWatcherPlugin))
-
-ClipboardWatcherPlugin* plugin_instance;
 
 struct _ClipboardWatcherPlugin {
   GObject parent_instance;
@@ -25,26 +20,25 @@ G_DEFINE_TYPE(ClipboardWatcherPlugin,
 void handle_owner_change(GtkClipboard* clipboard,
                          GdkEvent* event,
                          gpointer data) {
-  if (plugin_instance->is_watching != true) {
+  ClipboardWatcherPlugin* plugin = CLIPBOARD_WATCHER_PLUGIN(data);
+  if (plugin->is_watching != true) {
     return;
   }
 
   g_autoptr(FlValue) result_data = fl_value_new_map();
-  fl_method_channel_invoke_method(plugin_instance->channel,
+  fl_method_channel_invoke_method(plugin->channel,
                                   "onClipboardChanged", result_data, nullptr,
                                   nullptr, nullptr);
 }
 
 static FlMethodResponse* start(ClipboardWatcherPlugin* self, FlValue* args) {
   self->is_watching = true;
-  return FL_METHOD_RESPONSE(
-      fl_method_success_response_new(fl_value_new_bool(true)));
+  return FL_METHOD_RESPONSE(fl_method_success_response_new(nullptr));
 }
 
 static FlMethodResponse* stop(ClipboardWatcherPlugin* self, FlValue* args) {
   self->is_watching = false;
-  return FL_METHOD_RESPONSE(
-      fl_method_success_response_new(fl_value_new_bool(true)));
+  return FL_METHOD_RESPONSE(fl_method_success_response_new(nullptr));
 }
 
 // Called when a method call is received from Flutter.
@@ -68,6 +62,9 @@ static void clipboard_watcher_plugin_handle_method_call(
 }
 
 static void clipboard_watcher_plugin_dispose(GObject* object) {
+  ClipboardWatcherPlugin* self = CLIPBOARD_WATCHER_PLUGIN(object);
+  g_clear_object(&self->channel);
+
   G_OBJECT_CLASS(clipboard_watcher_plugin_parent_class)->dispose(object);
 }
 
@@ -97,11 +94,9 @@ void clipboard_watcher_plugin_register_with_registrar(
   fl_method_channel_set_method_call_handler(
       plugin->channel, method_call_cb, g_object_ref(plugin), g_object_unref);
 
-  plugin_instance = plugin;
-
   GtkClipboard* clipboard = gtk_clipboard_get(GDK_SELECTION_PRIMARY);
   g_signal_connect(clipboard, "owner-change", G_CALLBACK(handle_owner_change),
-                   NULL);
+                   plugin);
 
   g_object_unref(plugin);
 }
