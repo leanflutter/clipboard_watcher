@@ -1,3 +1,7 @@
+## 0.1.3
+
+* [linux] fix memory leaks & cosmetic clean up #7
+
 ## 0.1.2
 
 * [macos] Change timer interval to 0.1 seconds

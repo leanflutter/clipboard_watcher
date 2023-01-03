@@ -45,7 +45,7 @@
 
 ```yaml
 dependencies:
-  clipboard_watcher: ^0.1.2
+  clipboard_watcher: ^0.1.3
 ```
 
 或
