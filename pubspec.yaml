@@ -7,6 +7,8 @@ platforms:
   linux:
   macos:
   windows:
+  ios:
+  android:
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
@@ -32,3 +34,6 @@ flutter:
         pluginClass: ClipboardWatcherPlugin
       ios:
         pluginClass: ClipboardWatcherPlugin
+      android:
+        pluginClass: ClipboardWatcherPlugin
+        package: clipboard.watcher
