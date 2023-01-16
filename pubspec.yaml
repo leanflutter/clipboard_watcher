@@ -30,4 +30,5 @@ flutter:
         pluginClass: ClipboardWatcherPlugin
       windows:
         pluginClass: ClipboardWatcherPlugin
-
+      ios:
+        pluginClass: ClipboardWatcherPlugin
