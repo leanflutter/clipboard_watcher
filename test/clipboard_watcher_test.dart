@@ -1,6 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:clipboard_watcher/clipboard_watcher.dart';
+// import 'package:clipboard_watcher/clipboard_watcher.dart';
 
 void main() {
   const MethodChannel channel = MethodChannel('clipboard_watcher');
