@@ -1,16 +1,14 @@
 # clipboard_watcher
 
-[![pub version][pub-image]][pub-url] [![][discord-image]][discord-url] ![][visits-count-image] 
+[![pub version][pub-image]][pub-url] [![][discord-image]][discord-url] ![][visits-count-image]
 
 [pub-image]: https://img.shields.io/pub/v/clipboard_watcher.svg
 [pub-url]: https://pub.dev/packages/clipboard_watcher
-
 [discord-image]: https://img.shields.io/discord/884679008049037342.svg
 [discord-url]: https://discord.gg/zPa6EZ2jqb
-
 [visits-count-image]: https://img.shields.io/badge/dynamic/json?label=Visits%20Count&query=value&url=https://api.countapi.xyz/hit/leanflutter.clipboard_watcher/visits
 
-This plugin allows Flutter desktop apps to watch clipboard changes.
+This plugin allows Flutter apps to watch clipboard changes.
 
 ---
 
@@ -33,13 +31,13 @@ English | [简体中文](./README-ZH.md)
 
 ## Platform Support
 
-|Platform|Support|
-|---|:---|
-|Linux|✔️ Fully supported|
-|macOS|✔️ Fully supported|
-|Windows|✔️ Fully supported|
-|iOS|14+ Needs user permission to read data copied from others apps<br>Old versions are fully supported out of the box|
-|Android|10+ Only works when the app is in the foreground<br>Old versions are fully supported out of the box|
+| Platform | Support                                                                                                           |
+| -------- | :---------------------------------------------------------------------------------------------------------------- |
+| Linux    | ✔️ Fully supported                                                                                                |
+| macOS    | ✔️ Fully supported                                                                                                |
+| Windows  | ✔️ Fully supported                                                                                                |
+| iOS      | 14+ Needs user permission to read data copied from others apps<br>Old versions are fully supported out of the box |
+| Android  | 10+ Only works when the app is in the foreground<br>Old versions are fully supported out of the box               |
 
 ## Quick Start
 
@@ -49,7 +47,7 @@ Add this to your package's pubspec.yaml file:
 
 ```yaml
 dependencies:
-  clipboard_watcher: ^0.1.3
+  clipboard_watcher: ^0.2.0
 ```
 
 Or

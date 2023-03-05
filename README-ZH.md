@@ -1,16 +1,14 @@
 # clipboard_watcher
 
-[![pub version][pub-image]][pub-url] [![][discord-image]][discord-url] ![][visits-count-image] 
+[![pub version][pub-image]][pub-url] [![][discord-image]][discord-url] ![][visits-count-image]
 
 [pub-image]: https://img.shields.io/pub/v/clipboard_watcher.svg
 [pub-url]: https://pub.dev/packages/clipboard_watcher
-
 [discord-image]: https://img.shields.io/discord/884679008049037342.svg
 [discord-url]: https://discord.gg/zPa6EZ2jqb
-
 [visits-count-image]: https://img.shields.io/badge/dynamic/json?label=Visits%20Count&query=value&url=https://api.countapi.xyz/hit/leanflutter.clipboard_watcher/visits
 
-这个插件允许 Flutter 桌面应用程序观察剪贴板的变化。
+这个插件允许 Flutter 应用程序观察剪贴板的变化。
 
 ---
 
@@ -33,9 +31,13 @@
 
 ## 平台支持
 
-| Linux | macOS | Windows |
-| :---: | :---: | :-----: |
-|   ✔️   |   ✔️   |    ✔️    |
+| 平台    | 支持                                                                   |
+| ------- | :--------------------------------------------------------------------- |
+| Linux   | ✔️ 完全支持                                                            |
+| macOS   | ✔️ 完全支持                                                            |
+| Windows | ✔️ 完全支持                                                            |
+| iOS     | 14+ 需要用户权限才能读取从其他应用复制的数据<br>旧版本完全支持开箱即用 |
+| Android | 10+ 仅当应用程序位于前台时有效<br>旧版本完全支持开箱即用               |
 
 ## 快速开始
 
@@ -45,7 +47,7 @@
 
 ```yaml
 dependencies:
-  clipboard_watcher: ^0.1.3
+  clipboard_watcher: ^0.2.0
 ```
 
 或

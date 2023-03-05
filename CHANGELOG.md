@@ -1,3 +1,7 @@
+## 0.2.0
+
+* Add mobile support (#8) @ademar111190
+
 ## 0.1.3
 
 * [linux] fix memory leaks & cosmetic clean up #7
