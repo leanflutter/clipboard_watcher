@@ -33,9 +33,13 @@ English | [简体中文](./README-ZH.md)
 
 ## Platform Support
 
-| Linux | macOS | Windows |
-| :---: | :---: | :-----: |
-|   ✔️   |   ✔️   |    ✔️    |
+|Platform|Support|
+|---|:---|
+|Linux|✔️ Fully supported|
+|macOS|✔️ Fully supported|
+|Windows|✔️ Fully supported|
+|iOS|14+ Needs user permission to read data copied from others apps<br>Old versions are fully supported out of the box|
+|Android|10+ Only works when the app is in the foreground<br>Old versions are fully supported out of the box|
 
 ## Quick Start
 
