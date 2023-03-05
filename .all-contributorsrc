@@ -1,0 +1,53 @@
+{
+  "projectName": "clipboard_watcher",
+  "projectOwner": "leanflutter",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md",
+    "README-ZH.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "lijy91",
+      "name": "LiJianying",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3889523?v=4",
+      "profile": "https://github.com/lijy91",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "ademar111190",
+      "name": "Ademar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1225438?v=4",
+      "profile": "https://github.com/ademar111190",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "boparaiamritcsb",
+      "name": "Amritpal Singh",
+      "avatar_url": "https://avatars.githubusercontent.com/u/64081899?v=4",
+      "profile": "https://customersuccessbox.com/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "jpnurmi",
+      "name": "J-P Nurmi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/140617?v=4",
+      "profile": "https://github.com/jpnurmi",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "linkToUsage": true
+}
