@@ -1,9 +1,8 @@
 import 'dart:async';
 
+import 'package:clipboard_watcher/src/clipboard_listener.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
-
-import 'clipboard_listener.dart';
 
 class ClipboardWatcher {
   ClipboardWatcher._() {

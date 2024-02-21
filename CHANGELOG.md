@@ -1,3 +1,8 @@
+## 0.2.1
+
+* Updates minimum supported SDK version to Flutter 3.3/Dart 3.0.
+* [android] fix: NPE crash problem #14
+
 ## 0.2.0
 
 * Add mobile support (#8) @ademar111190

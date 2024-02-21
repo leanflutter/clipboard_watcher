@@ -1,16 +1,15 @@
 // ignore_for_file: avoid_print
 
-import 'package:flutter/material.dart';
-
-import 'package:flutter/services.dart';
 import 'package:clipboard_watcher/clipboard_watcher.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   State<MyApp> createState() => _MyAppState();
@@ -31,30 +30,31 @@ class _MyAppState extends State<MyApp> with ClipboardListener {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-            child: Column(
-          children: [
-            ElevatedButton(
-              child: const Text('start'),
-              onPressed: () {
-                clipboardWatcher.start();
-              },
-            ),
-            ElevatedButton(
-              child: const Text('stop'),
-              onPressed: () {
-                clipboardWatcher.stop();
-              },
-            ),
-          ],
-        )),
+          child: Column(
+            children: [
+              ElevatedButton(
+                child: const Text('start'),
+                onPressed: () {
+                  clipboardWatcher.start();
+                },
+              ),
+              ElevatedButton(
+                child: const Text('stop'),
+                onPressed: () {
+                  clipboardWatcher.stop();
+                },
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
 
   @override
-  void onClipboardChanged() async {
+  Future<void> onClipboardChanged() async {
     ClipboardData? newClipboardData =
         await Clipboard.getData(Clipboard.kTextPlain);
-    print(newClipboardData?.text ?? "");
+    print(newClipboardData?.text ?? '');
   }
 }

@@ -1,3 +1,3 @@
-abstract class ClipboardListener {
+abstract mixin class ClipboardListener {
   void onClipboardChanged() {}
 }

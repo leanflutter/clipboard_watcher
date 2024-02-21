@@ -48,17 +48,7 @@
 
 ```yaml
 dependencies:
-  clipboard_watcher: ^0.2.0
-```
-
-或
-
-```yaml
-dependencies:
-  clipboard_watcher:
-    git:
-      url: https://github.com/leanflutter/clipboard_watcher.git
-      ref: main
+  clipboard_watcher: ^0.2.1
 ```
 
 ### 用法
@@ -119,6 +109,7 @@ class _HomePageState extends State<HomePage> with ClipboardListener {
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/ademar111190"><img src="https://avatars.githubusercontent.com/u/1225438?v=4?s=100" width="100px;" alt="Ademar"/><br /><sub><b>Ademar</b></sub></a><br /><a href="https://github.com/leanflutter/clipboard_watcher/commits?author=ademar111190" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://customersuccessbox.com/"><img src="https://avatars.githubusercontent.com/u/64081899?v=4?s=100" width="100px;" alt="Amritpal Singh"/><br /><sub><b>Amritpal Singh</b></sub></a><br /><a href="https://github.com/leanflutter/clipboard_watcher/commits?author=boparaiamritcsb" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/jpnurmi"><img src="https://avatars.githubusercontent.com/u/140617?v=4?s=100" width="100px;" alt="J-P Nurmi"/><br /><sub><b>J-P Nurmi</b></sub></a><br /><a href="https://github.com/leanflutter/clipboard_watcher/commits?author=jpnurmi" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Leobuaa"><img src="https://avatars.githubusercontent.com/u/6970283?v=4?s=100" width="100px;" alt="Leo Peng"/><br /><sub><b>Leo Peng</b></sub></a><br /><a href="https://github.com/leanflutter/clipboard_watcher/commits?author=Leobuaa" title="Code">💻</a></td>
     </tr>
   </tbody>
   <tfoot>
