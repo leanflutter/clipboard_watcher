@@ -107,7 +107,7 @@ class ClipboardWatcherPlugin : FlutterPlugin,
         val clipboardManager = context.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
         val clipData = clipboardManager.primaryClip
         if (clipData != null && clipData.itemCount > 0) {
-            val currentClipboardContent = clipData.getItemAt(0).text.toString()
+            val currentClipboardContent = clipData.getItemAt(0).text?.toString()
             if (currentClipboardContent != lastClipboardContent) {
                 lastClipboardContent = currentClipboardContent
                 channel.invokeMethod("onClipboardChanged", emptyMap<Any, Any>())
