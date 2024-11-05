@@ -25,7 +25,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    namespace 'dev.leanflutter.clipboard_watcher'
+    namespace 'dev.leanflutter.plugins.clipboard_watcher'
     compileSdkVersion 33
 
     compileOptions {
