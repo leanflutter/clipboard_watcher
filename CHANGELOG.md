@@ -1,3 +1,7 @@
+## 0.3.0
+
+* [android] Issue building with gradle version >= 8.x.x #16
+
 ## 0.2.1
 
 * Updates minimum supported SDK version to Flutter 3.3/Dart 3.0.
